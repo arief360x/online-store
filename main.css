@@ -1,0 +1,27 @@
+/* * { border: 1px solid green; } */
+
+/* root(put var) html(reset html on browser) and body(fonts and size) for initializaiton */
+:root{
+    --white:#F7F7F7;
+    --black:#141E27;
+    --red:#D82148;
+
+    /*Size multiple of 4  */
+    --small:1.4rem;
+    --medium:1.8rem;
+    --big:2.2rem;   
+}
+/* Sets 1.0rem (relative units) from 16px to 10px */
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: var(--small);
+}
+
