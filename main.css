@@ -1,7 +1,7 @@
 /* * { border: 1px solid green; } */
 
 /* root(put var) html(reset html on browser) and body(fonts and size) for initializaiton */
-:root{
+:root {
     --white:#F7F7F7;
     --black:#141E27;
     --red:#D82148;
@@ -12,16 +12,55 @@
     --big:2.2rem;   
 }
 /* Sets 1.0rem (relative units) from 16px to 10px */
-html{
-    padding: 0;
-    margin: 0;
+html {
     font-size: 62.5%;
-    box-sizing: border-box;
-
 }
 
 body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto Serif', sans-serif;
     font-size: var(--small);
+
 }
+
+/* ul{
+    padding-left: 0px;
+} */
+
+/* flex direction, direction for displaying indside default is row, from left to right */
+/* justify content to positioning */
+.nav-bar{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    
+}
+
+.nav-bar-categories, .nav-bar-login{
+    display: inherit;
+    background-color: red;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.nav-bar-categories ul, .nav-bar-login ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+
+.nav-bar-categories li {
+    margin-right: 20px;
+    
+}
+
+
+    
+
 
